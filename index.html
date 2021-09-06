@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Tic Tac Toe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css" integrity="sha512-SvJR34InARUfJb279ipE/gjQqX11MDKaly9MNb0vevuWQJmZ23UH7F/65ScEsvLI+myKGbdfA1En82wVSCHQ8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div id="main" class="mt-4 text-center">
+        <div class="shadow-md rounded-md overflow-hidden m-auto" style="width: 350px;">
+            <img src="./assets/images/undraw_ninja_e52b.svg" class="" alt="">      
+            <div class="p-4">
+                <h5 class="text-xl font-semibold mb-2">TIC TAC TOE</h5>      
+                <p id="ins" class="mb-4 text-gray-900 text-xl font-sans">Start the game by one tap!<br><br>Player 1 - <b>Player X</b><br> 
+                    Player 2 - <b>Player 0</b>
+                </p>
+                <p class="mt-4 mb-4">
+                    <input type="text" class="m-auto text-center w-20 border-gray-800 border-solid border rounded-lg text-4xl h-16 grid-player-box" id="square-box1" onclick="squareBox_3(); squareBox();" readonly>
+                    <input type="text" class="m-auto text-center w-20 border-gray-800 border-solid border rounded-lg text-4xl h-16 grid-player-box" id="square-box2" onclick="squareBox_4(); squareBox();" readonly>
+                    <input type="text" class="m-auto text-center w-20 border-gray-800 border-solid border rounded-lg text-4xl h-16 grid-player-box" id="square-box3" onclick="squareBox_5(); squareBox();" readonly>
+                    <br><br>
+                    <input type="text" class="m-auto text-center w-20 border-gray-800 border-solid border rounded-lg text-4xl h-16 grid-player-box" id="square-box4" onclick="squareBox_6(); squareBox();" readonly>                        
+                    <input type="text" class="m-auto text-center w-20 border-gray-800 border-solid border rounded-lg text-4xl h-16 grid-player-box" id="square-box5" onclick="squareBox_7(); squareBox();" readonly>
+                    <input type="text" class="m-auto text-center w-20 border-gray-800 border-solid border rounded-lg text-4xl h-16 grid-player-box" id="square-box6" onclick="squareBox_8(); squareBox();" readonly>
+                    <br><br>
+                    <input type="text" class="m-auto text-center w-20 border-gray-800 border-solid border rounded-lg text-4xl h-16 grid-player-box" id="square-box7" onclick="squareBox_9(); squareBox();" readonly>
+                    <input type="text" class="m-auto text-center w-20 border-gray-800 border-solid border rounded-lg text-4xl h-16 grid-player-box" id="square-box8" onclick="squareBox_10();squareBox();" readonly>
+                    <input type="text" class="m-auto text-center w-20 border-gray-800 border-solid border rounded-lg text-4xl h-16 grid-player-box" id="square-box9" onclick="squareBox_11();squareBox();" readonly>
+                </p>
+                <button onclick="resetGame()" class="bg-purple-500 text-white active:bg-purple-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                    RESET
+                </button>
+            </div>
+            <p class="p-5 text-3xl font-sans text-green-800" id="print-response"></p>
+        </div>
+	</div>
+	<script src="./assets//js/app.js"></script>
+</body>
+</html>
